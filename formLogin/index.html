@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h3>Entrar em Contato</h3>
+        <label><i class="fas fa-envelope"></i></label>
+        <input id="email" type="text" name="email" placeholder="Seu e-mail...">
+        <label><i class="fas fa-lock"></i></label>
+        <input id="password" type="password" name="password" placeholder="Sua senha...">
+        <input type="submit" name="acao" value="Enviar!">
+        <a href="forgot.html">forgot your password?</a>
+
+        <div class="or">
+            <div class="line"></div>        
+            <h4>or</h4>
+            <div class="line"></div>
+        </div>
+
+        <h2>Sign in with your social media account</h2>
+
+        <div class="social-media">
+            <a target="_blank" href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+            <a target="_blank" href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+        </div>
+        
+    </form>
+
+
+    <script src="all.min.js"></script>
+
+    <script>
+        var email = document.getElementById('email')
+        var pass = document.getElementById('senha')
+
+        email.addEventListener('focus', () => {
+            email.style.borderColor = '#4a5f6a'
+        })
+
+        senha.addEventListener('focus', () => {
+            senha.style.borderColor = '#4a5f6a'
+        })
+
+        email.addEventListener('blur', () => {
+            email.style.borderColor = '#ccc'
+        })
+
+        senha.addEventListener('blur', () => {
+            senha.style.borderColor = '#ccc'
+        })
+    </script>
+</body>
+</html>
